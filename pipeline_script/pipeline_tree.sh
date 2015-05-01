@@ -44,6 +44,6 @@ trimal -in align_i_done.phy -out align_trim_done.phy -phylip -automated1
 
 # RAxML
 module load RAxML
-raxmlHPC-PTHREADS-SSE3 -p 12345 -s protein.phy -n out -m PROTGAMMAAUTO -T $CPU -f a -x 121 -# 10
+raxmlHPC-PTHREADS-SSE3 -p 12345 -s align_trim_done.phy -n out -m PROTGAMMAAUTO -T $CPU -f a -x 121 -# 10
  
 echo "Done" 
